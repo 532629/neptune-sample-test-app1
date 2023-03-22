@@ -43,7 +43,36 @@
 									"translation": []
 								}
 							],
-							"data": []
+							"data": [
+								{
+									"fieldNo": "2eac3265-6374-46aa-c115-e6c4fd87f877",
+									"fieldName": "oButton",
+									"fieldParent": "a77bef4d-490e-42b6-d4a2-f77706257744",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Submmit",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "console.log(\"Hello-world\");",
+											"script": "console.log(\"Hello-world\");",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
 						}
 					]
 				}
@@ -59,7 +88,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "23.3.22.927",
+	"ver": "23.3.22.956",
 	"application": "testsampleapplication1",
 	"title": "",
 	"description": "",
