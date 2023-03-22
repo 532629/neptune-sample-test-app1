@@ -1,0 +1,49 @@
+{
+	"id": "130c5723-1227-47d1-bb03-af8fda34b7ae",
+	"createdAt": "2023-03-22T09:18:53.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/532629/neptune-sample-test-app1.git"
+	},
+	"name": "Test-Development-Package-1",
+	"description": "Test-Development-Package-1",
+	"ver": "23.3.22.941",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "c294acce-cc81-4c0a-844b-4cbc5e6eb101",
+			"application": "testsampleapplication1",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"media_library": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}
