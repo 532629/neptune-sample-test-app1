@@ -1,0 +1,108 @@
+{
+	"id": "a97c5dfa-e271-440f-945a-8fee2ee62802",
+	"createdAt": "2023-03-24T17:11:56.000Z",
+	"createdBy": "admin",
+	"objects": [
+		{
+			"fieldNo": "e51583d2-2776-4919-9272-969fa5326bbf",
+			"fieldName": "oShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "4736683c-ee29-4943-de57-4804db6244e0",
+					"fieldName": "oApp",
+					"fieldParent": "e51583d2-2776-4919-9272-969fa5326bbf",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "2d5f964c-4497-453b-99bb-cf92158bb7e4",
+							"fieldName": "oPage",
+							"fieldParent": "4736683c-ee29-4943-de57-4804db6244e0",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "177d85f0-7108-47eb-fa04-af2043c68bf6",
+									"fieldName": "oRadioButton1",
+									"fieldParent": "2d5f964c-4497-453b-99bb-cf92158bb7e4",
+									"fieldType": "sap.m.RadioButton",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": []
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "23.3.24.1711",
+	"application": "applicationtest2",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"apis": [],
+	"package": "130c5723-1227-47d1-bb03-af8fda34b7ae"
+}
