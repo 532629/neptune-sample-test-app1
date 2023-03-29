@@ -16,6 +16,11 @@ const cloneUrl = (server: string) => `${server}/api/functions/Package/CloneRepos
 const getUrl = (server: string) => `${server}/api/functions/Package/Get`;
 const importUrl = (server: string) => `${server}/api/functions/Package/ImportRepository`;
 
+console.log('serverUrl :'+serverUrl);
+console.log('serverToken :'+serverToken);
+console.log('githubToken :'+githubToken);
+
+
 const httpsAgent = new https.Agent({
     rejectUnauthorized: false
 });
