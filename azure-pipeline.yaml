@@ -1,0 +1,37 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- features/test-1
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'npm install'
+
+- script: |
+    npm run deploy
+    env:
+      DXP_OE_SERVER_URL: http://localhost:8082
+      DXP_OE_SERVER_USER: "admin"
+      DXP_OE_SERVER_PASSWORD: "admin"
+      GITHUB_TOKEN: "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"
+  displayName: 'npm deploy'
