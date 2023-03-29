@@ -7,9 +7,14 @@ import * as https from 'https';
 import * as path from 'path';
 import * as fs from 'fs';
 
-const serverUrl = process.env.DXP_OE_SERVER_URL;
+/*const serverUrl = process.env.DXP_OE_SERVER_URL;
 const serverToken = process.env.DXP_OE_SERVER_TOKEN;
 const githubToken = process.env.GITHUB_TOKEN;
+*/
+
+const serverUrl = "http://localhost:8082";
+const serverToken = "abc";
+const githubToken = "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";
 
 const deleteUrl = (server: string) => `${server}/api/functions/Package/DelPackageAndArtifacts`
 const cloneUrl = (server: string) => `${server}/api/functions/Package/CloneRepository`;
