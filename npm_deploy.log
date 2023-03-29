@@ -1,0 +1,15 @@
+
+> Test-Development-Package-1@1.0.0 deploy
+> env-cmd ts-node src/deploy.ts
+
+serverUrl :http://localhost:8082
+serverToken :eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiJkNDhkOTg0NC1kNTdlLTQwNTMtODYwZC04ZmYxNWFhYTBlY2EiLCJpYXQiOjE2ODAwOTk0NzgsImV4cCI6MTY4Mjg2NDI3OH0.lHYNvvHRHAVrWRCTfau7bm6aawVAVgbTB_AN9aZVnnk
+githubToken :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
+deleteUrl :(server) => `${server}/api/functions/Package/DelPackageAndArtifacts`
+cloneUrl :(server) => `${server}/api/functions/Package/CloneRepository`
+getUrl :(server) => `${server}/api/functions/Package/Get`
+importUrl :(server) => `${server}/api/functions/Package/ImportRepository`
+Inside function getPackageFromServer()...... 
+id : 130c5723-1227-47d1-bb03-af8fda34b7ae
+serverUrl : http://localhost:8082
+Package does not exist on server, cloning...
