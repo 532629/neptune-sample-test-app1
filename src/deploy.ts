@@ -13,7 +13,7 @@ const githubToken = process.env.GITHUB_TOKEN;
 */
 
 const serverUrl = "http://localhost:8082";
-const serverToken = "abc";
+const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiI0NGQzNjYyZi02ZThjLTQwNTEtYjA0OC05ZjhkY2UyOTZmY2IiLCJpYXQiOjE2ODAwOTcxMjgsImV4cCI6MTY4MDE4MzUyOH0.7iIFBeu2xRa_q1PG2ChEWpuW4SZVrmVCzI6vzSWnJP4";
 const githubToken = "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";
 
 const deleteUrl = (server: string) => `${server}/api/functions/Package/DelPackageAndArtifacts`
