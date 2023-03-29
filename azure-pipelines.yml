@@ -3,6 +3,10 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+variables:
+- name: one
+  value: initialValue 
+  
 trigger:
 - features/test-1
 
@@ -29,9 +33,4 @@ steps:
 
 - script: |
     npm run deploy
-    env:
-      DXP_OE_SERVER_URL: http://localhost:8082
-      DXP_OE_SERVER_USER: "admin"
-      DXP_OE_SERVER_PASSWORD: "admin"
-      GITHUB_TOKEN: "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"
   displayName: 'npm deploy'
