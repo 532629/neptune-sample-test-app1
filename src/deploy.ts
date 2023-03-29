@@ -16,6 +16,10 @@ const serverUrl = "http://localhost:8082";
 const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiI0NGQzNjYyZi02ZThjLTQwNTEtYjA0OC05ZjhkY2UyOTZmY2IiLCJpYXQiOjE2ODAwOTcxMjgsImV4cCI6MTY4MDE4MzUyOH0.7iIFBeu2xRa_q1PG2ChEWpuW4SZVrmVCzI6vzSWnJP4";
 const githubToken = "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";
 
+console.log('serverUrl :'+serverUrl);
+console.log('serverToken :'+serverToken);
+console.log('githubToken :'+githubToken);
+
 const deleteUrl = (server: string) => `${server}/api/functions/Package/DelPackageAndArtifacts`
 const cloneUrl = (server: string) => `${server}/api/functions/Package/CloneRepository`;
 const getUrl = (server: string) => `${server}/api/functions/Package/Get`;
