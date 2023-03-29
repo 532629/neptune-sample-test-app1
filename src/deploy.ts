@@ -7,19 +7,31 @@ import * as https from 'https';
 import * as path from 'path';
 import * as fs from 'fs';
 
-/*const serverUrl = process.env.DXP_OE_SERVER_URL;
+/*
+const serverUrl = process.env.DXP_OE_SERVER_URL;
 const serverToken = process.env.DXP_OE_SERVER_TOKEN;
 const githubToken = process.env.GITHUB_TOKEN;
+
 */
 
+
 const serverUrl = "http://localhost:8082";
-const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiI0NGQzNjYyZi02ZThjLTQwNTEtYjA0OC05ZjhkY2UyOTZmY2IiLCJpYXQiOjE2ODAwOTcxMjgsImV4cCI6MTY4MDE4MzUyOH0.7iIFBeu2xRa_q1PG2ChEWpuW4SZVrmVCzI6vzSWnJP4";
+const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiJkNDhkOTg0NC1kNTdlLTQwNTMtODYwZC04ZmYxNWFhYTBlY2EiLCJpYXQiOjE2ODAwOTk0NzgsImV4cCI6MTY4Mjg2NDI3OH0.lHYNvvHRHAVrWRCTfau7bm6aawVAVgbTB_AN9aZVnnk";
+const githubToken = "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";
+
+
+/*
+const serverUrl = "http://localhost:8080";
+const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiI2N2Q4MTU5MC1iMmU0LTQxZmMtOWZjYy00ZDNlMTQ3Nzk3YzQiLCJpYXQiOjE2ODAxMDIwNDEsImV4cCI6MTY4MjY5NDA0MX0.IbIaaYRLDf2AnZ3NOIEy1YQTVeqdshG9VXsnUCv_nIM";
 const githubToken = "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";
+*/
 
 console.log('serverUrl :'+serverUrl);
 console.log('serverToken :'+serverToken);
 console.log('githubToken :'+githubToken);
 
+const server = "http://localhost:8082";
+/*const server = "http://localhost:8080";*/
 const deleteUrl = (server: string) => `${server}/api/functions/Package/DelPackageAndArtifacts`
 const cloneUrl = (server: string) => `${server}/api/functions/Package/CloneRepository`;
 const getUrl = (server: string) => `${server}/api/functions/Package/Get`;
@@ -87,16 +99,19 @@ async function getPackageFromServer(id: string): Promise<boolean> {
             if (errorLog.length > 0) {
                 console.warn(`One or more artifacts failed to deploy`, errorLog);
             }
+            
             return process.exit(0);
         }
 
         console.log('Package exists on server, importing...');
+        
         const importResult = await axiosPost(importUrl(serverUrl), {id, branch: 'master', auth: {authType: 1, token: githubToken}, forceUpdate: true});
         console.log('Package has been imported on server');
         const errorLog = importResult.data.importLog.data.filter(entry => entry.transferStatus === 'Error');
         if (errorLog.length > 0) {
             console.warn(`One or more artifacts failed to deploy`, errorLog);
         }
+        
 
     } catch (e) {
         console.error('Failed to deploy package', e);
