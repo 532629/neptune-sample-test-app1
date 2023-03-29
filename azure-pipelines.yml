@@ -28,7 +28,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install
+    npm install env-cmd
   displayName: 'npm install'
 
 - script: |
