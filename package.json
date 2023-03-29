@@ -6,7 +6,7 @@
   "license": "LicenseRef-LICENSE",
   "private": true,
   "scripts": {
-    "deploy": "ts-node src/deploy.ts",
+    "deploy": "env-cmd ts-node src/deploy.ts",
     "test": "jest --passWithNoTests"
   },
   "engines": {
