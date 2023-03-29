@@ -21,10 +21,10 @@ const cloneUrl = (server: string) => `${server}/api/functions/Package/CloneRepos
 const getUrl = (server: string) => `${server}/api/functions/Package/Get`;
 const importUrl = (server: string) => `${server}/api/functions/Package/ImportRepository`;
 
-console.log('serverUrl :'+serverUrl);
-console.log('serverToken :'+serverToken);
-console.log('githubToken :'+githubToken);
-
+console.log('deleteUrl :'+deleteUrl);
+console.log('cloneUrl :'+cloneUrl);
+console.log('getUrl :'+getUrl);
+console.log('importUrl :'+importUrl);
 
 const httpsAgent = new https.Agent({
     rejectUnauthorized: false
@@ -54,6 +54,9 @@ async function readPackageFile() {
 
 async function getPackageFromServer(id: string): Promise<boolean> {
     try {
+        console.log('Inside function getPackageFromServer()...... ');
+        console.log('id : ' + id);
+        console.log('serverUrl : ' + serverUrl);
         await axiosPost(getUrl(serverUrl), { id });
         return true;
     } catch (e) {
