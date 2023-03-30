@@ -16,14 +16,14 @@ const githubToken = process.env.GITHUB_TOKEN;
 
 
 const serverUrl = "http://localhost:8082";
-const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiJkNDhkOTg0NC1kNTdlLTQwNTMtODYwZC04ZmYxNWFhYTBlY2EiLCJpYXQiOjE2ODAwOTk0NzgsImV4cCI6MTY4Mjg2NDI3OH0.lHYNvvHRHAVrWRCTfau7bm6aawVAVgbTB_AN9aZVnnk";
-const githubToken = "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";
+const serverToken = "";
+const githubToken = "";
 
 
 /*
 const serverUrl = "http://localhost:8080";
-const serverToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YzE1MGE4LTUyNGYtNDNlZi05ZmNjLWRhMmY0Y2IxMDNmOSIsInV1aWQiOiI2N2Q4MTU5MC1iMmU0LTQxZmMtOWZjYy00ZDNlMTQ3Nzk3YzQiLCJpYXQiOjE2ODAxMDIwNDEsImV4cCI6MTY4MjY5NDA0MX0.IbIaaYRLDf2AnZ3NOIEy1YQTVeqdshG9VXsnUCv_nIM";
-const githubToken = "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";
+const serverToken = "";
+const githubToken = "";
 */
 
 console.log('serverUrl :'+serverUrl);
